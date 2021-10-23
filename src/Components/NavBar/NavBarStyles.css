@@ -1,0 +1,27 @@
+/*Estilos para mi menu de navegacion*/
+
+.nav__container{
+    height: 78px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.menu__container{
+    display: flex;
+    align-items: center;
+}
+
+.menu__list{
+    padding: 1em;
+}
+
+.nav-links{
+    color: #333333;
+    transition: .5s all ease;
+}
+
+.nav-links:hover{
+    color: black;
+}
