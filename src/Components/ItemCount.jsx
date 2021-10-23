@@ -30,3 +30,4 @@ ItemCount.propTypes = {
     initialCount: PropTypes.number,
     stock: PropTypes.number
 }
+
