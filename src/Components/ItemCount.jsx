@@ -1,33 +1,29 @@
-import React from 'react'
-import { useState } from 'react'
-import PropTypes from 'prop-types'
+import { Button } from '@mui/material'
+import React,{useState} from 'react'
 
-export const ItemCount = ({initialCount, stock}) => {
+export const ItemCount = ({initialState, stock, onAdd}) => {
 
-    const [count, setCount] = useState(initialCount);
+    const [count, setCount] = useState(0)
 
-    const increment = () => {
-        setCount(count + 1);
+    const handleAdd = () => {
+        if(count < stock) {
+            setCount(count + 1)
+        }
     }
 
-    const decrement = () => {
-        setCount(count - 1);
+    const handleRemove = () => {
+        if(count > 0) {
+            setCount(count - 1)
+        }
     }
 
-    const message = count > stock ? 'Fuera de stock' : 'En stock';
-    
     return (
         <div>
-            <button onClick={increment} disabled = {count > stock}>+</button>
-            <span>{count}</span>
-            <button onClick={decrement} disabled = {count < 1}>-</button>
-            <p>{message}</p>
-        </div>  
+            <Button onClick={handleAdd} disabled={count >= 5}> + </Button>
+            <span> {count} </span>
+            <Button onClick={handleRemove}> - </Button>
+            <hr />
+            <Button onClick={() => onAdd(count)}> Agregar al carrito </Button>
+        </div>
     )
 }
-
-ItemCount.propTypes = {
-    initialCount: PropTypes.number,
-    stock: PropTypes.number
-}
-
