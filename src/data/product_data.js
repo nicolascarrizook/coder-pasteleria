@@ -1,0 +1,38 @@
+export const productos = [
+    {
+        id: 1,
+        name: 'Box Surtidos',
+        description: 'Box con surtido de chocolates',
+        price: 500,
+        currency: '$',
+        thumb: './assets/thumb_surtidos.jpg',
+        stock: 10,
+    },
+    {
+        id: 2,
+        name: 'Tarta de coco',
+        description: 'Tarta con masa de galletas y coco',
+        price: 1500,
+        currency: '$',
+        thumb: './assets/thumb_tartaCoco.jpg',
+        stock: 10,
+    },
+    {
+        id: 3,
+        name: 'Budín de limón',
+        description: 'Budin de limon',
+        price: 800,
+        currency: '$',
+        thumb: './assets/thumb_budinLimon.jpg',
+        stock: 10,
+    },
+    {
+        id: 4,
+        name: 'Torta personalizada',
+        description: 'Torta personalizadas',
+        price: 500,
+        currency: '$',
+        thumb: './assets/thumb_tortaPinata.jpg',
+        stock: 10,
+    },
+]

@@ -12,7 +12,6 @@ function App() {
     <Container>
       <NavBar/>
       <ItemListContainer greeting="Hola esto va a ser reemplazado por un catalogo"/> 
-      <ItemList/>
     </Container>
   );
 }
