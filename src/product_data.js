@@ -14,7 +14,7 @@ export const productos = [
         description: 'Tarta con masa de galletas y coco',
         price: 1500,
         currency: '$',
-        thumb: './assets/thumb_tartaCoco.jpg',
+        thumb: 'assets/thumb_tartaCoco.jpg',
         stock: 10,
     },
     {
@@ -23,7 +23,7 @@ export const productos = [
         description: 'Budin de limon',
         price: 800,
         currency: '$',
-        thumb: './assets/thumb_budinLimon.jpg',
+        thumb: 'assets/thumb_budinLimon.jpg',
         stock: 10,
     },
     {
@@ -32,7 +32,7 @@ export const productos = [
         description: 'Torta personalizadas',
         price: 500,
         currency: '$',
-        thumb: './assets/thumb_tortaPinata.jpg',
+        thumb: 'assets/thumb_tortaPinata.jpg',
         stock: 10,
     },
 ]

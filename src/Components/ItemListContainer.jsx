@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { ItemCount } from './ItemCount'
 import { ItemList } from './ItemList'
-import { productos } from '../data/product_data';
+import { productos } from '../product_data';
 import { ItemDetailContainer } from './ItemDetailContainer';
 
 export const ItemListContainer = ({ greeting }) => {
@@ -11,7 +11,6 @@ export const ItemListContainer = ({ greeting }) => {
             {/* <h1>{greeting}</h1> */}
             {/* <ItemCount initialState={0} stock={5} onAdd={handleAdd} /> */}
             <ItemList/>
-            <ItemDetailContainer/>
         </>
     )
 }

@@ -1,30 +1,31 @@
 import React from 'react';
+import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
 import './NavBarStyles.css';
 import { MenuList } from './MenuList';
 import { CartWidget } from './CartWidget';
+import ShoppingCartOutlinedIcon from '@mui/icons-material/ShoppingCartOutlined';
 
 
 export const NavBar = () => {
   return (
     <>
       <nav className="nav__container">
-        <div className="logo">
-          <a href="#">Casa G Pattiserie</a>
-        </div>
+        <Link to="/">LOGO</Link>
         <ul className="menu__container">
-          {
-            MenuList.map((index, key) => {
-              return (
-                <li key={key} className="menu__list">
-                  <a href={index.url} className={index.cName}>
-                    {index.title}
-                  </a>
-                </li>
-              )
-            })
-          }
+          <li className="menu__list">
+            <Link to="/">Home</Link>
+          </li>
+          <li className="menu__list">
+            <Link to="/about">Nosotros</Link>
+          </li>
+          <li className="menu__list">
+            <Link to="/productos">Productos</Link>
+          </li>
+          <li className="menu__list">
+            <Link to="/">Home</Link>
+          </li>
         </ul>
-        <CartWidget />
+        <Link to="cart-details">  <ShoppingCartOutlinedIcon/> </Link>
       </nav>
     </>
   )

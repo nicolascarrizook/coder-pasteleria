@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { productos } from '../data/product_data';
+import { productos } from '../product_data';
 
 export const ItemDetail = () => {
 
